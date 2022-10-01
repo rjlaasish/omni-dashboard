@@ -1,0 +1,28 @@
+.accordion {
+    max-width: 600px;
+  }
+  
+  .accordion-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .accordion-content {
+    font-size: 0.8rem;
+    
+  }
+
+  .accordion-content::before{
+    content: '';
+    width: 1px;
+    height: 80px;
+    left: 50px;
+    position: absolute;
+    background-color: #9fb2ff;
+  }
+
+  .accordian-icon{
+    font-size: 0.8rem;
+  }

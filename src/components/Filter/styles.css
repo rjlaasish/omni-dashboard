@@ -1,0 +1,45 @@
+.filter-wrapper {
+  display: flex;
+}
+
+.filter-btn {
+  width: fit-content;
+  margin-bottom: 10px;
+}
+.filter-container {
+  width: fit-content;
+  display: flex;
+  align-items: flex-end;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 15px;
+}
+
+.filter-picker {
+  height: 38px;
+  width: 150px;
+  margin-left: 10px;
+  background-color: #efefef;
+  border: 1px solid rgba(0, 0, 0, 0.377);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.date-picker-custom {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.from-picker {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.apply-btn {
+  margin-left: 35px;
+  height: 40px;
+}

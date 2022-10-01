@@ -1,0 +1,13 @@
+.table-container {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.table-header {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}

@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import DailyCalender from './pages/Calenders/DailyCalender';
+import Dashboard from './pages/Dashboard';
+import WeeklyCalender from './pages/Calenders/WeeklyCalenders';
+import DailyRecording from './pages/Recordings/DailyRecording';
+import WeeklyRecording from './pages/Recordings/WeeklyRecording';
+import DailyAttendance from './pages/Attendances/DailyAttendance';
+import WeeklyAttendance from './pages/Attendances/WeeklyAttendances=';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route path='/' element={<Dashboard />} />
+          <Route path='/calenders/daily-calender' element={<DailyCalender />} />
+          <Route path='/calenders/weekly-calender' element={<WeeklyCalender />} />
+          <Route path='/recordings/daily-recording' element={<DailyRecording />} />
+          <Route path='/recordings/weekly-recording' element={<WeeklyRecording />} />
+          <Route path='/attendances/daily-attendance' element={<DailyAttendance />} />
+          <Route path='/attendances/weekly-attendance' element={<WeeklyAttendance />} />
+
+        </Route>
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 

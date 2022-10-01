@@ -1,0 +1,64 @@
+[
+  {
+    "id": "1",
+    "display": "Home",
+    "icon": "<i className='bx bx-home'></i>",
+    "to": "/",
+    "hasChildren": false,
+    "children": []
+  },
+  {
+    "id": "2",
+    "display": "Calenders",
+    "to": "/calenders",
+    "hasChildren": true,
+    "children": [
+      {
+        "id": "3",
+        "display": "Daily Calender",
+        "to": "/calenders/daily-calender"
+      },
+      {
+        "id": "4",
+        "display": "Weekly Calender",
+        "to": "/calenders/weekly-calender"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "display": "Recordings",
+    "to": "/recordings",
+    "hasChildren": true,
+    "children": [
+      {
+        "id": "6",
+        "display": "Daily Recording",
+        "to": "/recordings/daily-recording"
+      },
+      {
+        "id": "7",
+        "display": "Weekly Recording",
+        "to": "/recordings/weekly-recording"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "display": "Attendances",
+    "to": "/attendance",
+    "hasChildren": true,
+    "children": [
+      {
+        "id": "6",
+        "display": "Daily Attendance",
+        "to": "/attendances/daily-attendance"
+      },
+      {
+        "id": "7",
+        "display": "Weekly Attendance",
+        "to": "/attendances/weekly-attendance"
+      }
+    ]
+  }
+]

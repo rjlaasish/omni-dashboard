@@ -1,0 +1,13 @@
+.dash-card-container {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.footer {
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+}
