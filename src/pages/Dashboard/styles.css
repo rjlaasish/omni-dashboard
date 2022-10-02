@@ -11,3 +11,9 @@
   bottom: 0;
   right: 15px;
 }
+
+@media (max-width: 768px) {
+  .dash-card-container {
+    flex-direction: column;
+  }
+}

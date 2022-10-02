@@ -62,3 +62,11 @@
 .dropdown-profile p:hover {
   background-color: #efefef;
 }
+
+@media (max-width: 768px) {
+  .user-profile-wrapper,
+  .header-bookmark,
+  .search-wrapper {
+    display: none;
+  }
+}

@@ -48,7 +48,17 @@ a:focus {
   border-bottom: 1px dashed #ddd;
   margin: 40px 0;
 }
-
-/* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
+
+.ham-menu {
+  position: absolute;
+  top: 32px;
+  left: 433px;
+}
+
+@media (min-width: 768px) {
+  .ham-menu {
+    display: none;
+  }
+}

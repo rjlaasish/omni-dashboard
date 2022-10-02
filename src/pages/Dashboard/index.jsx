@@ -54,9 +54,6 @@ function Dashboard() {
         ))}
       </div>
       <GroupTable title="Groups" />
-      <div className="footer">
-        <p>Copyright © sambaash</p>
-      </div>
     </>
   );
 }

@@ -4,7 +4,7 @@ import sidebarNavItems from "../../sidemenu.json";
 import Accordion from "../Accordian";
 import "./styles.css";
 
-function Sidebar() {
+function Sidebar({ isOpen }) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleItemClick = (idx) => {
@@ -12,7 +12,7 @@ function Sidebar() {
   };
 
   return (
-    <nav id="sidebar">
+    <nav id="sidebar" className={isOpen ? "active" : "" }>
       <div class="sidebar-header">
         <img
           src={require("../../assets/images/omni.png")}
