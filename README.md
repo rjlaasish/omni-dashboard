@@ -14,3 +14,5 @@ UI Library: [Bootstrap](https://getbootstrap.com/)
 
 > **Note:** This redesign is only more focused to UI/UX improvement rather than functionalities. Still, more improvement can be done to make it more appealing .
 
+Demo link: [Click here](https://omni-dashboard.netlify.app/)
+
