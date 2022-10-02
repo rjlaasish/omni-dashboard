@@ -16,3 +16,5 @@ UI Library: [Bootstrap](https://getbootstrap.com/)
 
 Demo link: [Click here](https://omni-dashboard.netlify.app/)
 
+Screenshot:![enter image description here](https://raw.githubusercontent.com/rjlaasish/omni-dashboard/master/src/assets/images/OmniLearn-LMS.png)
+
