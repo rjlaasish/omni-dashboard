@@ -2,6 +2,7 @@ import React from "react";
 import DashboardCard from "../../components/Cards/DashboardCard";
 import Header from "../../components/Header";
 import GroupTable from "../../components/Tables/GroupTable";
+import DATA from "../../tableData.json";
 import "./styles.css";
 
 function Dashboard() {
@@ -40,7 +41,7 @@ function Dashboard() {
       lastCount: 368,
       lastSynced: "7 days",
       icon: "fa-solid fa-clipboard-user",
-      href: "/attendances/daily-attendances",
+      href: "/attendances/daily-attendance",
     },
   ];
 
@@ -53,7 +54,7 @@ function Dashboard() {
           <DashboardCard {...data} />
         ))}
       </div>
-      <GroupTable title="Groups" />
+      <GroupTable title="Groups" data={DATA.groups} />
     </>
   );
 }

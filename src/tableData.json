@@ -1,18 +1,114 @@
 {
   "groups": [
     {
-      "name": "BSDE-WDF-0332",
-      "createdDate": "Sept. 12, 2022",
+      "name": "BADE-WDF-0332",
+      "createdDate": "Sept. 12 2022",
       "calenders": "60",
       "recordings": "48",
       "attendanceReports": "28"
     },
     {
-      "name": "BSDE-WDF-0332",
-      "createdDate": "Sept. 12, 2022",
+      "name": "BSSE-WDF-0342",
+      "createdDate": "Oct. 12 2021",
+      "calenders": "40",
+      "recordings": "62",
+      "attendanceReports": "92"
+    }
+  ],
+  "dailyAttendances": [
+    {
+      "name": "BADE-WDF-0332",
+      "createdDate": "Sept. 12 2022",
       "calenders": "60",
       "recordings": "48",
       "attendanceReports": "28"
+    },
+    {
+      "name": "BSSE-WDF-0342",
+      "createdDate": "Oct. 12 2021",
+      "calenders": "40",
+      "recordings": "62",
+      "attendanceReports": "92"
+    }
+  ],
+  "weeklyAttendances": [
+    {
+      "name": "BADE-WDF-0332",
+      "createdDate": "Sept. 12 2022",
+      "calenders": "60",
+      "recordings": "48",
+      "attendanceReports": "28"
+    },
+    {
+      "name": "BSSE-WDF-0342",
+      "createdDate": "Oct. 12 2021",
+      "calenders": "40",
+      "recordings": "62",
+      "attendanceReports": "92"
+    }
+  ],
+  "dailyCalenders": [
+    {
+      "name": "BADE-WDF-0332",
+      "createdDate": "Sept. 12 2022",
+      "calenders": "60",
+      "recordings": "48",
+      "attendanceReports": "28"
+    },
+    {
+      "name": "BSSE-WDF-0342",
+      "createdDate": "Oct. 12 2021",
+      "calenders": "40",
+      "recordings": "62",
+      "attendanceReports": "92"
+    }
+  ],
+  "weeklyCalenders": [
+    {
+      "name": "BADE-WDF-0332",
+      "createdDate": "Sept. 12 2022",
+      "calenders": "60",
+      "recordings": "48",
+      "attendanceReports": "28"
+    },
+    {
+      "name": "BSSE-WDF-0342",
+      "createdDate": "Oct. 12 2021",
+      "calenders": "40",
+      "recordings": "62",
+      "attendanceReports": "92"
+    }
+  ],
+  "dailyRecordings": [
+    {
+      "name": "BADE-WDF-0332",
+      "createdDate": "Sept. 12 2022",
+      "calenders": "60",
+      "recordings": "48",
+      "attendanceReports": "28"
+    },
+    {
+      "name": "BSSE-WDF-0342",
+      "createdDate": "Oct. 12 2021",
+      "calenders": "40",
+      "recordings": "62",
+      "attendanceReports": "92"
+    }
+  ],
+  "weeklyRecordings": [
+    {
+      "name": "BADE-WDF-0332",
+      "createdDate": "Sept. 12 2022",
+      "calenders": "60",
+      "recordings": "48",
+      "attendanceReports": "28"
+    },
+    {
+      "name": "BSSE-WDF-0342",
+      "createdDate": "Oct. 12 2021",
+      "calenders": "40",
+      "recordings": "62",
+      "attendanceReports": "92"
     }
   ]
 }

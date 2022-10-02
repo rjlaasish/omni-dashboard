@@ -107,6 +107,7 @@ a.article:hover {
 
 .sidebar-image {
   width: 100%;
+  cursor: pointer;
 }
 
 .sidebar-accordian {

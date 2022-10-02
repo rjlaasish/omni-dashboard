@@ -1,12 +1,54 @@
 import React from "react";
 import CExcelDownload from "../../ExcelDownload";
-import DATA from "../../../tableData.json";
 import "./styles.css";
 import Filter from "../../Filter";
 
-function GroupTable({ title }) {
-  const downloadExcel = () => {};
-  console.log(DATA.groups);
+function GroupTable({ title, data }) {
+  const columns = [
+    {
+      headerText: "Name",
+      columnName: "name",
+      exportable: true,
+    },
+    {
+      headerText: "Created Date",
+      columnName: "createdDate",
+      exportable: true,
+    },
+    {
+      headerText: "Recordings",
+      columnName: "recordings",
+      exportable: true,
+    },
+    {
+      headerText: "Attendance Reports",
+      columnName: "attendanceReports",
+      exportable: true,
+    },
+  ];
+
+  const downloadExcel = (data) => {
+    const exportableColumns = columns.filter((c) => c.exportable);
+
+    let csv = "";
+    exportableColumns.forEach(({ headerText }) => (csv += headerText + ","));
+    csv = csv.slice(0, csv.length - 1) + "\n";
+
+    data.forEach((d) => {
+      let rowData = "";
+      exportableColumns.forEach(
+        ({ columnName }) => (rowData += d[columnName] + ",")
+      );
+      csv += rowData.slice(0, rowData.length - 1) + "\n";
+    });
+
+    const link = document.createElement("a");
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    link.setAttribute("href", url);
+    link.setAttribute("download", "export.csv");
+    link.click();
+  };
 
   return (
     <>
@@ -14,19 +56,20 @@ function GroupTable({ title }) {
       <div className="table-container">
         <div className="table-header">
           <h5>{title}</h5>
-          <CExcelDownload onClickHandler={downloadExcel} />
+          <CExcelDownload onClickHandler={() => downloadExcel(data)} />
         </div>
         <table class="table">
           <thead class="thead-light">
             <tr>
-              <th scope="col">Name</th>
-              <th scope="col">Created Date</th>
-              <th scope="col">Recordings</th>
-              <th scope="col">Attendance Reports</th>
+              {columns.map((column, idx) => (
+                <th scope="col" key={column.columnName}>
+                  {column.headerText}
+                </th>
+              ))}
             </tr>
           </thead>
           <tbody>
-            {DATA.groups.map((column, idx) => (
+            {data.map((column, idx) => (
               <tr key={idx}>
                 <td>{column.name}</td>
                 <td>{column.createdDate}</td>

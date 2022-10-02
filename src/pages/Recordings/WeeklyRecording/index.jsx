@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../../components/Header";
 import GroupTable from "../../../components/Tables/GroupTable";
+import DATA from "../../../tableData.json";
 
 function WeeklyRecording() {
     const breadCrumbData = [
@@ -11,7 +12,7 @@ function WeeklyRecording() {
       return (
         <>
           <Header breadCrumbData={breadCrumbData} />
-          <GroupTable title="Weekly Recording Report"/>
+          <GroupTable title="Weekly Recording Report" data={DATA.weeklyRecordings}/>
         </>
       );
 }

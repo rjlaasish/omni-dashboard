@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 import sidebarNavItems from "../../sidemenu.json";
 import Accordion from "../Accordian";
 import "./styles.css";
@@ -7,17 +8,19 @@ import "./styles.css";
 function Sidebar({ isOpen }) {
   const [activeIndex, setActiveIndex] = useState(0);
 
+  const navigate = useNavigate();
   const handleItemClick = (idx) => {
     setActiveIndex(idx);
   };
 
   return (
-    <nav id="sidebar" className={isOpen ? "active" : "" }>
+    <nav id="sidebar" className={isOpen ? "active" : ""}>
       <div class="sidebar-header">
         <img
           src={require("../../assets/images/omni.png")}
           className="sidebar-image"
           alt="omni-logo"
+          onClick={() => navigate.push("/")}
         />
       </div>
 
